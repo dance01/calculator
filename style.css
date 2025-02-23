@@ -1,0 +1,28 @@
+#calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea{
+    border: 2px solid red;
+    flex-basis: 1100px;
+    width: 400px;
+}
+#buttons{
+    margin:20px;
+    width: 400px;
+    flex-basis: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+button{
+    flex-basis: 100px;
+    height: 50px;
+    flex-wrap: wrap;
+    
+}
