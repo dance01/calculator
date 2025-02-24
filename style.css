@@ -28,7 +28,7 @@ textarea{
     flex-grow: 1;
 }
 
-#numericButtons,
+.numericButtons,
 #operateButtons{
     display: flex;
     flex-direction: row-reverse;
@@ -54,3 +54,4 @@ button{
     height: 50px;
     flex-wrap: wrap;
 }
+
