@@ -1,57 +1,112 @@
+html{
+    background-color: rgb(247, 239, 233);
+}
+body{
+    font-family: 'OCR-A', 'OCR-B', monospace;
+    margin: 200px;
+}
+
 #calculator{
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    border: 2px solid rgb(172, 177, 182);
+    border-top: 0px;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: aliceblue;
 }
 
+
 #monitor{
-    border: 2px solid red;
-    width: 400px;
-    padding: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid rgb(45, 72, 98);
+    border-bottom: 6px solid rgb(45, 72, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 0px;
+    width: 100%;
+    height: 140px;
+    box-sizing: margin-box;
+    background-color: rgb(68, 106, 145);
 }
 
 textarea{
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: -4px;
+    flex-grow: 0;
+    width: 320px;
+    height: 70px;
+    padding: 0px;
+    padding-right: 16px;
+    font-size: 60px;
+    text-align: right;
+    background-color: rgb(217, 221, 225);
+    color: rgb(48, 66, 84);
+    border: 2px solid rgb(45, 72, 98);
 }
 
 #allButtons{
+    
     display: flex;
-    margin:20px;
-    flex-basis: 90px;
+    margin:20px 0px;
     flex-wrap: wrap;
-    width: 550px;
-    justify-content: center;
     flex-grow: 1;
+    align-items: start;
 }
 
-.numericButtons,
-#operateButtons{
+.numericButtons{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px
+    gap: 18px;
+    padding: 0px;
+    flex-basis: 300px;
+    margin-left: 6px;
 }
 
 #operateButtons{
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 0px;
+    margin-left: -6px;
+}
+#opBtn{
+    flex-basis: 50px;
+    width: 70px;
+    flex-wrap: wrap;
+    background-color: rgb(68, 106, 145);
+    color: aliceblue;
 }
 
 #equalClearButtons{
-    flex-grow: 1;
     display: flex;
-    margin-top: 10px;
-    margin-left: 15px;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 18px;
+    /* margin-left: -10px; */
+    margin-top: 18px;
 }
 
+#equal{
+    flex-basis: 250px;
+    background-color: rgb(255, 157, 0);
+}
 
 button{
-    flex-basis: 100px;
+    flex-basis: 70px;
     height: 50px;
     flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: rgb(215, 218, 222);
+    font-size: large;
 }
+
+
 
